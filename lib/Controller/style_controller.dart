@@ -15,7 +15,7 @@ class StyleController extends GetxController {
   var fontSize = 15.0.obs;
   var isBold = false.obs;
   var isItalic = false.obs;
-  var textAlign = TextAlign.left.obs;
+  var textAlign = TextAlign.center.obs;
   var alignIcon = Icons.format_align_left.obs;
   var underLine = false.obs;
   ////////
