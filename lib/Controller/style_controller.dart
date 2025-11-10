@@ -6,11 +6,11 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class StyleController extends GetxController {
-  ////////
+  //for text add //
   var addedText = "".obs;
   var textAddedorNot = false.obs;
-  ///////
 
+  // for styling properties//
   var selectedFont = 'Roboto'.obs;
   var fontSize = 15.0.obs;
   var isBold = false.obs;
@@ -18,9 +18,9 @@ class StyleController extends GetxController {
   var textAlign = TextAlign.center.obs;
   var alignIcon = Icons.format_align_left.obs;
   var underLine = false.obs;
-  ////////
+  //for dragging property
   var textPosition = Offset(100, 100).obs;
-  //////
+
   final font = FontList.fonts;
   void addtext(String text) {
     addedText.value = text;
@@ -35,6 +35,7 @@ class StyleController extends GetxController {
     selectedFont.value = fontName;
   }
 
+  // alignment function
   double measureTextWidth(String text) {
     final textPainter = TextPainter(
       text: TextSpan(

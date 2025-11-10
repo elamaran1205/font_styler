@@ -51,6 +51,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            // undo and redo widget
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -68,9 +69,9 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-
+            // undo and redo widget
             const SizedBox(height: 25),
-
+            // CANVAS text editor
             Center(
               child: Container(
                 height: 320,
@@ -134,13 +135,13 @@ class _HomePageState extends State<HomePage> {
                 }),
               ),
             ),
-
+            // CANVAS text editor
             const SizedBox(height: 30),
-
+            // FONT STYLE AND FONT SIZE BUTTONS
             styleSizeButtons(),
 
             const SizedBox(height: 20),
-
+            // other styling attributes
             textStyleComponent(),
 
             const SizedBox(height: 40),
